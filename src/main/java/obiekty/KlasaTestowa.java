@@ -24,6 +24,17 @@ public class KlasaTestowa {
         System.out.println();
         dajGlos(listaZwierzat);
 
+        Cat kot1 = new Cat("Mruczek");
+        Dog pies1 = new Dog("Burek");
+
+        kot1.eatMouse();
+
+        Vet vet = new Vet();
+
+        vet.sayHello(kot1);
+        vet.sayHello(pies1);
+        vet.sayHello(new Cow());
+
     }
 
     public static void dajGlos(Animal[] zwierzeta){
